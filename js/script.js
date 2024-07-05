@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('/coder/js/users.json')
+    fetch('js/users.json')
         .then(response => response.json())
         .then(users => {
             const user = users.find(user => user.username === username && user.password === password);
@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                 messageDiv.style.color = '#c9ada7';
                 messageDiv.textContent = '¡Inicio de sesión exitoso!';
                 setTimeout(() => {
-                    window.location.href = '/coder/pagina/1.html'; // Redirigir a la página específica
+                    window.location.href = 'pagina/1.html'; // Redirigir a la página específica
                 }, 1000); // Redirigir después de 1 segundo
             } else {
                 messageDiv.style.color = 'red';
