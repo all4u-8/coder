@@ -1,0 +1,143 @@
+/*en el body puedes modificar el color de fondo, letra etc.*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #22223b;
+    margin: 0;
+    padding: 0;
+    color: #c9ada7;
+}
+/*en el contenedor verde*/
+.container {
+    background-color: #4a4e69;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*tag h1 en este caso "VENTA DE PASAJES"*/
+h1 {
+    text-align: center;
+    color: #c9ada7;
+}
+
+.form-group {
+    margin-left: 5%;
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c9ada7;
+}
+
+select, input[type="date"], input[type="number"],input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#asientos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.asiento {
+    position: relative;
+    background-color: #007e73;
+    color: #fff;
+    text-align: center;
+    left: 15px;
+    top: 75px;
+    width: 30px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.asiento.selected {
+    background-color: #ffc107;
+}
+/*.asiento2 {
+    position: relative;
+    background-color: #254b74;
+    color: #fff;
+    left: 30px;
+    top: 150px;
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.asiento2.selected {
+    background-color: #ffc107;
+}*/
+#bus {
+    border-radius: 50px;
+    background-color: #d1d8df;
+    height: 600px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+/*#imagenbus {
+    position: relative;
+    left: 400px;
+    bottom: 500px;
+    width: 300px;
+}*/
+#preCompra {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #ddd;
+    float: left;
+    position: fixed;
+    z-index: 999;
+    margin-left: -70px;
+    bottom: -10px;
+    left: 90px;
+    border-radius: 10px;
+    background-color: #00417e;
+    height: 50px;
+    width: 100px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+#resultado{
+
+    font-family: sans-serif;
+    text-align: left;
+    color: #22223b;
+    border-radius: 10px;
+
+    background-color: #d1d8df;
+    height: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+
+}
+/*#resultado,p{
+    position: relative;
+    top: 40px;
+    left: 10px;
+}*/
