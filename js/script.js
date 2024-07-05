@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                 messageDiv.style.color = '#c9ada7';
                 messageDiv.textContent = '¡Inicio de sesión exitoso!';
                 setTimeout(() => {
-                    window.location.href = '/pagina/1.html'; // Redirigir a la página específica
+                    window.location.href = '/coder/pagina/1.html'; // Redirigir a la página específica
                 }, 1000); // Redirigir después de 1 segundo
             } else {
                 messageDiv.style.color = 'red';
